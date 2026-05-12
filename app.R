@@ -45,8 +45,10 @@ ui <- fluidPage(
 
       h5("About"),
       p("This tool calculates BDI (Bronchiectasis Dysbiosis Index) values for microbiome data."),
-      p("Upload a file containing species abundance data with samples as columns."),
-
+      p("Upload a file containing species abundance data with samples as columns.",
+        "For an example file, see",
+        tags$a("here", href = "https://github.com/Jayanth-kumar5566/BDI-tool/blob/main/example.txt", target = "_blank"),
+        "."),
       h5("Input Format:"),
       tags$ul(
         tags$li("Rows: Taxonomic abundance (species level)"),
